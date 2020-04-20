@@ -46,7 +46,7 @@ refreshPopup.addEventListener("transitionend", () => {
   refreshPopup.classList.remove("active");
   refreshPopupBox.classList.remove("active");
   location.reload();
-  return false;
+  window.location.href = "http://jacobduncan.me/color-hex-generator/";
 });
 
 adjustButton.forEach((button, index) => {
