@@ -46,6 +46,7 @@ refreshPopup.addEventListener("transitionend", () => {
   refreshPopup.classList.remove("active");
   refreshPopupBox.classList.remove("active");
   location.reload();
+  return false;
 });
 
 adjustButton.forEach((button, index) => {
