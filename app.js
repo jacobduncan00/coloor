@@ -45,7 +45,7 @@ refreshPopup.addEventListener("transitionend", () => {
   const refreshPopupBox = refreshPopup.children[0];
   refreshPopup.classList.remove("active");
   refreshPopupBox.classList.remove("active");
-  location.reload(true);
+  window.location.href = window.location.href;
 });
 
 adjustButton.forEach((button, index) => {
